@@ -27,12 +27,7 @@ const Hero = () => {
         {/* Heading */}
 
         <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-8">
-          The Leading{" "}
-          <span className="bg-gradient-to-r from-blue-900 to-emerald-500 bg-clip-text">
-            Enterprise AI
-          </span>
-          <br />
-          Test Engineering Platform
+          Enterprise AI Test <br></br>Engineering Platform
         </h1>
 
         {/* Description */}
@@ -64,28 +59,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Trusted Companies */}
-
-      <div className="mt-24 w-full max-w-6xl border-t border-gray-200 pt-10">
-
-        <p className="text-xs uppercase tracking-[3px] text-slate-500 font-semibold mb-8">
-          Trusted by innovative and AI-Native companies
-        </p>
-
-        <div className="flex flex-wrap justify-center gap-12 text-5xl text-gray-400 hover:text-gray-700 transition">
-
-          <FaAws />
-
-          <FaMicrosoft />
-
-          <FaGoogle />
-
-          <FaSalesforce />
-
-          <SiAtlassian />
-
-        </div>
-      </div>
+  
     </section>
   );
 };

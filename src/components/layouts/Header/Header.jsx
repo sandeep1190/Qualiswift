@@ -1,3 +1,5 @@
+import logo from "../../../assets/logo.png";
+
 const Header = () => {
   return (
     <header
@@ -5,15 +7,10 @@ const Header = () => {
       className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100"
     >
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded bg-blue-900 flex items-center justify-center text-white font-bold">
-            Q
-          </div>
 
-          <span className="text-xl font-bold tracking-tight text-blue-900">
-            Qualiswift
-          </span>
+        {/* Logo */}
+        <div className="flex items-center gap-2 logo">
+           <img src={logo} alt="Logo" />
         </div>
 
         {/* Navigation */}
@@ -22,10 +19,7 @@ const Header = () => {
             Platform
           </a>
 
-          <a
-            href="#capabilities"
-            className="hover:text-blue-900 transition-colors"
-          >
+          <a href="#capabilities" className="hover:text-blue-900 transition-colors">
             Capabilities
           </a>
 
@@ -33,22 +27,13 @@ const Header = () => {
             Outcomes
           </a>
 
-          <a
-            href="#industries"
-            className="hover:text-blue-900 transition-colors"
-          >
+          <a href="#industries" className="hover:text-blue-900 transition-colors">
             Industries
           </a>
         </nav>
 
         {/* Buttons */}
         <div className="flex items-center gap-4">
-          <a
-            href="#demo"
-            className="hidden md:block text-sm font-medium hover:text-blue-900 transition-colors"
-          >
-            Log in
-          </a>
 
           <a
             href="#demo"
