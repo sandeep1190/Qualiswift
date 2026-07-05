@@ -1,0 +1,103 @@
+@use "../../../assets/styles/variables" as *;
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: rgba(255,255,255,.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #ececec;
+}
+
+.header-wrapper{
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+
+    span{
+        font-family:$font-heading;
+        font-weight:700;
+        font-size:22px;
+        color:$primary;
+    }
+}
+
+.logo-icon{
+    width:34px;
+    height:34px;
+    background:$primary;
+    color:#fff;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+}
+
+.nav-menu{
+    display:flex;
+    gap:40px;
+
+    a{
+        color:$text-muted;
+        text-decoration:none;
+        font-weight:500;
+        transition:.3s;
+
+        &:hover{
+            color:$primary;
+        }
+    }
+}
+
+.header-actions{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.login-btn{
+    text-decoration:none;
+    color:$text;
+    font-weight:500;
+
+    &:hover{
+        color:$primary;
+    }
+}
+
+.demo-btn{
+    background:$primary;
+    color:#fff;
+    padding:12px 24px;
+    border-radius:50px;
+    text-decoration:none;
+    transition:.3s;
+
+    &:hover{
+        background:#062c6e;
+        color:#fff;
+    }
+}
+
+@media(max-width:991px){
+
+    .nav-menu{
+        display:none;
+    }
+
+    .login-btn{
+        display:none;
+    }
+
+}

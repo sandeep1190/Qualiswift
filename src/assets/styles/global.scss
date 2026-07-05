@@ -1,0 +1,25 @@
+@import "./variables";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-primary;
+    background: $background;
+    color: $text;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.hero-bg {
+    background: radial-gradient(
+        circle at top center,
+        rgba(0, 191, 166, 0.05) 0%,
+        rgba(248, 250, 252, 1) 50%
+    );
+}
