@@ -1,5 +1,6 @@
 {
   "name": "qualiswift",
+   "homepage": "https://qualiswift.ai/demo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
