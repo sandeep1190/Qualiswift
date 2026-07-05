@@ -1,4 +1,5 @@
 import { FaLinkedin, FaYoutube } from "react-icons/fa";
+import logo from "../../../assets/footer-logo.png";
 
 const Footer = () => {
   return (
@@ -16,15 +17,12 @@ const Footer = () => {
 
           <div className="md:col-span-2">
 
-            <div className="flex items-center gap-2 mb-6">
+            <div className="flex items-center gap-2 mb-6 logo">
 
-              <div className="w-8 h-8 rounded bg-[#0B3C91] flex items-center justify-center text-white font-bold">
-                Q
-              </div>
+            
+                <img src={logo} alt="Logo" />
+            
 
-              <span className="heading-font text-2xl font-bold text-white">
-                Qualiswift
-              </span>
 
             </div>
 
